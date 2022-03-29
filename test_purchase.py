@@ -1,13 +1,8 @@
 import pytest
 
-@pytest.fixture()
-def setUp():
-    print("Setup started")
-    yield
-    print("exited")
 
-def test_AddItemtoCart(setUp):
+def test_AddItemtoCart():
     print("added successfully")
 
-def test_RemoveItemFromCart(setUp):
+def test_RemoveItemFromCart():
     print("removed sucessfully")
